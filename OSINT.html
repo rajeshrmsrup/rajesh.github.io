@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajesh K.- Home</title>
+    <link rel="stylesheet" href="./cssFiles/normalize.css" />
+    <link rel="stylesheet" href="./cssFiles/main.css" />
+    <script src="https://kit.fontawesome.com/ded9ec9fb9.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./resources/favicon.ico"/>
+  </head>
+
+<style>
+.osMain{
+ 
+}
+
+.tbl {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tbl td, .tbl th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tbl tr:nth-child(even){background-color: #f2f2f2;}
+
+.tbl tr:hover {background-color: #ddd;}
+
+.tbl th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.lft{
+  text-align: left;
+}
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #ff0000a6;
+}
+
+.dropdown:hover {
+  background-color: #ff0000a6;
+}
+
+.dropdown-content {
+  display: none;
+ /* position: absolute; */
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #ff0000a6;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="burger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html"><i class='fas fa-home' style='font-size:48px;'></i></a></li>
+          <li><a href="codingStory.html">about</a></li>
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li>
+            <button id="lightModeSwitch">
+              <span id="info-theme">light theme</span>
+              <i class="fas fa-adjust"></i>
+            </button>
+          </li>
+        </ul>
+      </nav><hr><br>
+
+      <div class="osMain">
+        <table class="tbl">
+          <tr>
+            <th>Username</th>
+            <th>Email Address</th>
+            <th>Domain Name</th>
+            <th>IP Address</th>
+          </tr>
+
+          <tr>
+            <td><button class="dropbtn dropdown">Username Search Engines
+              <ul class="dropdown-content">
+                <li class="lft"><a href="https://namechk.com/" target="_blank">Namechk</a></li>
+                <li class="lft"><a href="http://knowem.com/" target="_blank">KnowEm</a></li>
+                <li class="lft"><a href="https://www.namecheckr.com/" target="_blank">NameCheckr</a></li>
+                <li class="lft"><a href="https://usersearch.org/" target="_blank">UserSearch.org</a></li>
+                <li class="lft"><a href="https://github.com/WebBreacher/WhatsMyName" target="_blank">WhatsMyName (T)</a></li>
+                <li class="lft"><a href="https://thatsthem.com/" target="_blank">Thats Them</a></li>
+                <li class="lft"><a href="http://checkusernames.com/" target="_blank">Check Usernames</a></li>
+                <li class="lft"><a href="https://namecheckup.com/" target="_blank">NameCheckup</a></li>
+                <li class="lft"><a href="https://instantusername.com/" target="_blank">Instant Username Search</a></li></button>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td><button class="dropdown">Specific Sites
+              <ul class="dropdown-content">
+                <li class="lft"><a href="https://www.google.com/search?q=site:amazon.com+%3Cusername%3E" target="_blank">Amazon Usernames (M)</a></li>
+                <li class="lft"><a href="https://www.amazon.com/gp/registry/search.html/?ie=UTF8&type=wishlist" target="_blank">Amazon Wishlists</a></li>
+                <li class="lft"><a href="https://api.github.com/users/%3Cusername%3E/events/public" target="_blank">Github User (M)</a></li>
+                <li class="lft"><a href="https://www.gotinder.com/@%3Cusername%3E" target="_blank">Tinder Usernames (M)</a></li>
+                <li class="lft"><a href="https://keybase.io/" target="_blank">Keybase</a></li>
+                <li class="lft"><a href="http://pgp.mit.edu/" target="_blank">MIT PGP Key Server</a></li>
+              </ul></button>
+            </td>              
+          </tr>
+
+        </table>
+      </div>
+
+      
+    </div>
+    <script src="./jsFiles/app.js"></script>
+    <script src="./jsFiles/responsiveNav.js"></script>
+    <script src="./jsFiles/lightMode.js"></script>
+  </body>
+</html>
